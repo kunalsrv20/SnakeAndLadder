@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="669.0" prefWidth="338.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snl.PlayerController">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="344.0" layoutX="-3.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/playerSelector.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="loginPlayBtn" fitHeight="54.0" fitWidth="178.0" layoutX="121.0" layoutY="528.0" onMouseClicked="#switchToBoardLoader" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/playButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="143.0" layoutY="600.0" onMouseClicked="#switchToStart" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/bogCopy.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="284.0" layoutX="31.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/playerOPtion1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="50.0" layoutX="42.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/tickSpace.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="278.0" layoutX="33.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/playerOPtion2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="49.0" layoutX="47.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/tickSpace.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameTextP11" disable="true" layoutX="136.0" layoutY="200.0" prefHeight="31.0" prefWidth="166.0" />
+      <TextField fx:id="nameTextP12" disable="true" layoutX="136.0" layoutY="241.0" prefHeight="34.0" prefWidth="167.0" />
+      <TextField fx:id="nameTextP21" disable="true" layoutX="135.0" layoutY="329.0" prefHeight="31.0" prefWidth="164.0" />
+      <TextField fx:id="nameTextP22" disable="true" layoutX="135.0" layoutY="370.0" prefHeight="31.0" prefWidth="164.0" />
+      <RadioButton fx:id="rgroup1" layoutX="57.0" layoutY="218.0" mnemonicParsing="false" onAction="#getPlayerGroup" prefHeight="30.0" prefWidth="26.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="pGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rgroup2" layoutX="61.0" layoutY="345.0" mnemonicParsing="false" onAction="#getPlayerGroup" prefHeight="39.0" prefWidth="38.0" toggleGroup="$pGroup">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="groupTeller" layoutX="120.0" layoutY="138.0" text="Player Set : 1" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

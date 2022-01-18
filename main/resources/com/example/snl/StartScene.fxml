@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="668.0" prefWidth="338.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snl.StartController">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="323.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/s1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="256.0" layoutX="52.0" layoutY="294.0" onMouseClicked="#switchToPageLoader" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ProjectImages/btn1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
